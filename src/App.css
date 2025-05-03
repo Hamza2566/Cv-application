@@ -1,0 +1,131 @@
+:root {
+    --color-primary: #5B2C6F;         /* Elegant deep violet */
+    --color-secondary: #00C9A7;       /* Vibrant aqua mint */
+    --color-background: #F9F9FB;      /* Very light stone */
+    --color-surface: #FFFFFF;         /* White for cards/forms */
+    --color-text-primary: #1C1C1E;    /* Charcoal black */
+    --color-text-secondary: #5E5E60;  /* Medium grey */
+    --color-highlight: #FFC857;      /* Warm stylish gold */
+    --color-accent-hover: #7F3FBF;    /* Brighter violet for hover */
+    --color-border: #E0E0E5;          /* Subtle border */
+    --color-shadow: rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+  }
+  h1, h2 {
+    color: var(--color-primary);
+  }
+  body{
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: sans-serif;
+  }
+  .container{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+  }  
+  .form-container{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--color-shadow);
+    padding: 10px;
+    overflow-y:auto ;
+    height: 90vh;
+    width: 30%;
+    background-color:var(--color-highlight);
+    
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+  .form-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  .form-container > * {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  form > * {
+    background-color: var(--color-background);
+    border-radius: 10px;
+  }
+  .personal-section{
+    padding: 10px;
+  }
+  .skills-section{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .education-section{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .education-section > button{
+    margin-top: 20px;
+  }
+  .experience-section{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .experience-section > button{
+    margin-top: 20px;
+  }
+  .personal-section .form-group{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group> input {
+    width: 90%; /* Full width */
+    padding: 12px 15px; /* Comfortable padding */
+    border: 1px solid var(--color-border); /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    color: var(--color-text-primary); /* Primary text color */
+    background-color: var(--color-surface); /* Background color */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.form-group >input:focus {
+    border-color: var(--color-accent-hover); /* Change border on focus */
+    box-shadow: 0 0 5px var(--color-highlight); /* Shadow effect on focus */
+    outline: none; /* Remove default outline */
+}
+.form-group >input:focus + label,
+input:not(:placeholder-shown) + label {
+    color: var(--color-accent-hover); /* Change color when input is focused or filled */
+}
+
+.form-group > label {
+  display: block; /* Block display for proper spacing */
+  margin-bottom: 8px; /* Space between label and input */
+  font-size: 16px; /* Font size for the label */
+  color: var(--color-text-primary); /* Primary text color */
+  font-weight: bold; /* Make the label bold */
+  transition: color 0.3s; /* Smooth color transition */
+}
+  button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--color-accent-hover);
+  }
+  
